@@ -1,0 +1,38 @@
+.form-container {
+  width: 70%;
+  margin: auto;
+}
+
+.form {
+  margin: 36px auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.actions button,
+.actions .link-btn {
+  margin: 16px 0;
+}
+
+.link-btn {
+  display: inline-block;
+  text-decoration: underline;
+}

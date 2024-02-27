@@ -1,0 +1,15 @@
+.coincard {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #948ea1;
+    margin: 16px 0;
+}
+
+.coincard img {
+    width: 50px;
+}
+
+.coincard p {
+    text-align: center;
+}

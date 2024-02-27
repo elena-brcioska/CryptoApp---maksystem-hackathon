@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+
+ul a {
+    color: red!important;
+    text-transform: capitalize!important;
+}
+
+button {
+    text-transform: capitalize!important;
+}
+
+.btn {
+    color: #FFFFFF!important;
+}
