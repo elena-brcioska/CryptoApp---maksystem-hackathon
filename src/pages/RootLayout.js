@@ -5,9 +5,11 @@ import Footer from "../components/Footer/Footer";
 import '../globalStyles.css'
 
 const RootLayout = () => {
+
   return (
     <>
-      <ButtonAppBar/>
+    
+      <ButtonAppBar />
       <main>
         <div className="media-wrapper">
           <Outlet />

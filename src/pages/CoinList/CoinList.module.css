@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-field {
+  width: 70%;
+  margin-bottom: 20px;
+  background-color: #858383;
+  border-radius: 5px;
+}
+
+.coin-card {
+  margin-bottom: 20px;
+}
+
+button.load-more {
+  background-color: #331D2C!important;
+  margin: 36px auto !important;
+}
+
+.price-range-input {
+  background-color: #9b9b9b2d;
+  margin-bottom: 20px!important;
+  width: 150px;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 12px!important;
+  outline: none; 
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+button.sort {
+  color: #331D2C!important;
+}
+
+
+

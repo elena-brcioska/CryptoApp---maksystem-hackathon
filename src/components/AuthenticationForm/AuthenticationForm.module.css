@@ -36,3 +36,24 @@
   display: inline-block;
   text-decoration: underline;
 }
+
+.form-container a {
+  color: #331D2C!important;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 95%;
+  }
+
+  .form-container h1 {
+    font-size: 24px;
+  }
+
+.form label,
+.form input,
+.form textarea {
+  width: 95%!important;
+  margin: auto;
+}
+}

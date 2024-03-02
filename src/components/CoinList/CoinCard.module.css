@@ -1,15 +1,80 @@
 .coincard {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px;
-    background-color: #948ea1;
-    margin: 16px 0;
+    margin: 16px 0!important;
+    width: 90%;
+    color: gray;
+    background: #2f3136;
 }
+
+.coincard div.name {
+    display: flex;
+}
+
+.details {
+    width: 90%;
+}
+
+
 
 .coincard img {
     width: 50px;
+    margin-right: 16px;
+    align-self: center;
 }
 
 .coincard p {
     text-align: center;
+}
+.details p {
+    text-align: left;
+    font-size: 14px;
+}
+
+p span {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+button.saved {
+    background-color: #331D2C!important;
+    color: #FFFFFF!important;
+}
+
+button[disabled] {
+    background-color: #61565c!important;
+    color: #6e696c!important;
+}
+
+button.modal {
+    margin: 8px!important;
+    color: #FFFFFF!important;
+}
+
+@media screen and (max-width: 768px) {
+    .coincard {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0!important;
+    }
+
+    .coincard div.name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coincard p {
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .details p {
+        text-align: center;
+        font-size: 12px;
+    }
 }

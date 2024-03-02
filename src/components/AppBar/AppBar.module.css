@@ -1,16 +1,29 @@
 a {
     text-decoration: none;
+    color: #FFFFFF!important;
 }
 
 ul a {
-    color: red!important;
+    color: #000000!important;
     text-transform: capitalize!important;
 }
 
-button {
+button.links {
     text-transform: capitalize!important;
+    background-color: #331D2C!important;
+    margin: 0!important;
 }
 
 .btn {
     color: #FFFFFF!important;
+}
+
+span {
+    margin-bottom: 6px;
+}
+
+@media screen and (max-width: 425px) {
+ span.welcome {
+    display: none!important;
+ }
 }

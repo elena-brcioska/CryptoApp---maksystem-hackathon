@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .search-field {
+    background-color: #9b9b9b2d;
+    width: 100%;
+    margin-bottom: 20px!important;
+  }
+  
+  .coin-card {
+    margin-bottom: 20px;
+  }
+  
+  button.load-more {
+    background-color: #331D2C!important;
+    color: #ffffff!important;
+    margin: 36px auto !important;
+  }
+  

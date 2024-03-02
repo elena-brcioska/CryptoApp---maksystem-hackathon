@@ -1,9 +1,33 @@
 body {
-    background-color: #9290C3;
+    background-color: #43464b;
+}
+
+h2 {
+  color: #FFFFFF;
+  background: linear-gradient(to right, transparent 0%, #3F2E3E 50%, #3F2E3E 60%, transparent 100%);
+  padding: 16px;
+  font-size: 32px;
 }
 
 .media-wrapper {
     width: 80%;
     margin: 80px auto;
 
+}
+  
+  .main-content {
+    flex: 1;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+
+    .media-wrapper {
+      width: 95%;
+      margin: 40px auto;
+  
+  }
 }
