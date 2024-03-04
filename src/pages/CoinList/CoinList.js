@@ -104,15 +104,14 @@ const CoinList = () => {
         sx={{
           display: "flex",
           flexDirection: {
-            xs: "column", // Column layout for extra small screens
-            md: "row", // Row layout for medium screens and up
+            xs: "column",
+            md: "row",
           },
-          alignItems: "center", // Adjust as needed
+          alignItems: "center",
           padding: {
-            xs: 1, // Padding for extra small screens
-            md: 2, // Padding for medium screens and up
+            xs: 1,
+            md: 2,
           },
-          // Other styles...
         }}
       >
         <TextField

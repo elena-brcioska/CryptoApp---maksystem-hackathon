@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { useMyCoins } from "../../context/MyCoinsContext";
 
 const Auth = () => {
+
   let user;
   try {
     user = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -14,7 +15,6 @@ const Auth = () => {
 
   const { setLoggedInUser, loggedInUser } = useMyCoins();
   const data = useActionData();
-  console.log(data, "DAATA");
 
   useEffect(() => {
     if (data) {
@@ -38,11 +38,9 @@ const Auth = () => {
 };
 
 export const action = ({ request }) => {
-  const searchParams = new URL(window.location.href).searchParams;
-  console.log(searchParams);
-  const mode = searchParams.get("mode") || "signup";
 
-  console.log(mode);
+  const searchParams = new URL(window.location.href).searchParams;
+  const mode = searchParams.get("mode") || "signup";
 
   if (mode !== "login" && mode !== "signup") {
     throw json({ message: "Unsupported mode!" }, { status: 422 });
@@ -68,9 +66,6 @@ export const action = ({ request }) => {
         email: formData.get("email"),
         password: formData.get("password"),
       };
-
-      console.log(registeredUser);
-      console.log(authData);
 
       if (
         authData.email === registeredUser.email &&

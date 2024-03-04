@@ -39,7 +39,6 @@ export const MyCoinsProvider = ({ children }) => {
 
 
   const deleteSelectedCoins = (selectedCoinIds) => {
-    debugger;
     setSavedCoins((prevCoins) => prevCoins.filter((coin) => !selectedCoinIds.includes(coin.id)));
   };
 

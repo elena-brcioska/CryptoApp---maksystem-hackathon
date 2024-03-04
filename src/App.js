@@ -1,5 +1,4 @@
 import "./App.css";
-import * as ReactDOM from "react-dom";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/RootLayout";
 import CoinList, { loader as coinsLoader } from "./pages/CoinList/CoinList";
@@ -18,7 +17,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     id: "root",
-    // action: action,
     children: [
       {
         index: true,
@@ -44,7 +42,6 @@ const router = createBrowserRouter([
         path: "mycoins",
         element: <ProtectedRoute><MyCoins /></ProtectedRoute>,
       },
-      // Catch-all route for handling unreachable paths
       {
         path: "*",
         element: <ErrorPage />,
